@@ -1,0 +1,36 @@
+.container-form-inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.form-inputs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 10px;
+}
+
+.input-grup{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-grup input{
+    display: flex;
+    height: 40px;
+    width: 150px;
+    gap: 20px;
+    padding-left: 10px;
+}
+
+.input-grup select{
+    width: 166px;
+    height: 46px;
+    padding-left: 15px;
+}
