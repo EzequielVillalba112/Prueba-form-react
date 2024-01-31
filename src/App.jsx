@@ -12,6 +12,22 @@ function App() {
     "Prueba",
   ]);
 
+  const [nombreProd, setNombreProd] = useState();
+  const [precioProd, setPrecioProd] = useState();
+  const [categoriaProd, setCategoriaProd] = useState();
+  const [stockProd, setStockProd] = useState();
+  const [codBarProd, setCodBarProd] = useState();
+  const [descripcionProd, setDescripcionProd] = useState();
+
+  const submit = () =>{
+    console.log(nombreProd);
+    console.log(precioProd);
+    console.log(categoriaProd);
+    console.log(stockProd);
+    console.log(codBarProd);
+    console.log(descripcionProd);
+  }
+
   let formItemsProduc = [
     {
       class: "input-grup",
@@ -20,11 +36,13 @@ function App() {
           nameInput: "NombreProducto",
           type: "text",
           placeholder: "Nombre de Producto",
+          onchange: setNombreProd,
         },
         {
           nameInput: "PrecioProducto",
           type: "number",
           placeholder: "Precio",
+          onchange: setPrecioProd,
         },
       ],
     },
@@ -36,11 +54,13 @@ function App() {
           nameInput: "Categoria",
           type: "select",
           option: categoria,
+          onchange: setCategoriaProd,
         },
         {
           nameInput: "Stock",
           type: "number",
           placeholder: "Stock",
+          onchange: setStockProd,
         },
       ],
     },
@@ -52,11 +72,13 @@ function App() {
           nameInput: "CodBarra",
           type: "number",
           placeholder: "Cod. Barra",
+          onchange: setCodBarProd,
         },
         {
           nameInput: "DescripcionProducto",
           type: "text",
           placeholder: "Descripcion",
+          onchange: setDescripcionProd,
         },
       ],
     },
@@ -98,8 +120,8 @@ function App() {
 
   return (
     <>
-      <FormInputs formItems={formItemsProduc} nameForm={nameFormProd} />
-      <FormInputs formItems={formItemsClient} nameForm={nameFormClien} />
+      <FormInputs formItems={formItemsProduc} nameForm={nameFormProd} submit={submit}/>
+      
     </>
   );
 }
