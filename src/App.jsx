@@ -121,7 +121,6 @@ function App() {
   return (
     <>
       <FormInputs formItems={formItemsProduc} nameForm={nameFormProd} submit={submit}/>
-      
     </>
   );
 }
