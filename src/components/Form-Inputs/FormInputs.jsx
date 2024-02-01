@@ -17,7 +17,7 @@ export default function FormInputs({ formItems, nameForm, submit = "" }) {
             una forma mas sencilla con css
             */
           <div key={formIndex} className={inputForm.class}>
-            {/*Mape el array de inputs resivido, y verifico si tiene un select
+            {/*Map el array de inputs resivido, y verifico si tiene un select
             para poder mapear todas las posibles selecciones, en el caso de que no
             encuentre un select carga un input de forma normal
             */}
